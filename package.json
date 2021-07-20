@@ -25,7 +25,8 @@
     "url": "https://github.com/alitoshmatov2001/json-to-type/issues"
   },
   "homepage": "https://github.com/alitoshmatov2001/json-to-type#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "typescript": "^4.3.5"
   }
 }
