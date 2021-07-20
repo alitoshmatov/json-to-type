@@ -1,4 +1,4 @@
-const JsonToType = (json: string): string | null => {
+export const JsonToType = (json: string): string | null => {
   try {
     const parsed: any = JSON.parse(json);
     if (parsed) {
@@ -45,5 +45,3 @@ const ArrToStr = (arr: unknown[]): string => {
   });
   return `(${[...types].join("|")})[]`;
 };
-
-export default JsonToType;

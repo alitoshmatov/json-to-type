@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.JsonToType = void 0;
 const JsonToType = (json) => {
     try {
         const parsed = JSON.parse(json);
@@ -16,6 +17,7 @@ const JsonToType = (json) => {
     }
     return null;
 };
+exports.JsonToType = JsonToType;
 const CheckType = (value) => {
     if (typeof value === "undefined") {
         return "any";
@@ -44,5 +46,4 @@ const ArrToStr = (arr) => {
     });
     return `(${[...types].join("|")})[]`;
 };
-exports.default = JsonToType;
 //# sourceMappingURL=index.js.map
